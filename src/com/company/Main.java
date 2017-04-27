@@ -32,7 +32,7 @@ public class Main {
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
                 if (!paused) {
-                    Ball ball = new Ball(e.getX(), e.getY(), 150, 150, 1000, 800);
+                    Ball ball = new Ball(e.getX(), e.getY(), 100, 100, canvas);
                     physicsManager.add(ball);
                     canvas.add(ball);
                 } else {

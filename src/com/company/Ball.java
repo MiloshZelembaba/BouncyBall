@@ -9,8 +9,6 @@ import java.awt.geom.Point2D;
  */
 public class Ball extends Physics{
 
-    private double width, height, originalHeight, originalWidth; // attributes of the ball
-    private double bounceVX, bounceVY;
     private double screenWidth, screenHeight;
     private boolean bouncing; /* when the ball is bouncing we need to keep track of the original veloctiy */
     private Ellipse2D.Double ball;
@@ -18,14 +16,16 @@ public class Ball extends Physics{
 
 
 
-    public Ball(double x, double y, double width, double height, double sw, double sh){
+    public Ball(double x, double y, double width, double height, Canvas c){
         this.width = originalWidth = width;
         this.height = originalHeight = height;
         this.x = x;
         this.y = y;
         velocityX = velocityY = 0;
-        screenHeight = sh;
-        screenWidth = sw;
+        velocityX = 1;
+        canvas = c;
+        screenHeight = c.getHeight();
+        screenWidth = c.getWidth();
         stiffness = 0.10;
         bouncing = false;
         ball = new Ellipse2D.Double(x,y,width,height);
@@ -45,12 +45,30 @@ public class Ball extends Physics{
 
         if (y + originalHeight >= screenHeight){
             if (!(moveController instanceof  BounceMove)){
-                moveController = new BounceMove(this);
+                moveController = new BounceMove(this, velocityY, velocityX, stiffness);
             }
         }
 
+        if (x + originalWidth >= screenWidth){
+            velocityX *= -1;
+        } else if (x < 0){
+            velocityX *= -1;
+        }
+
+
 
         updateBall();
+    }
+
+    public double getPropertyMax(String p){
+        double max = 0;
+        if (p == Properties.STIFFNESS){
+            max = 0.5;
+        } else if (p == Properties.BOUNCEYNESS){
+            max = 1;
+        }
+
+        return max;
     }
 
 //    @Override
@@ -80,12 +98,6 @@ public class Ball extends Physics{
         ball.y = y;
         ball.width = width;
         ball.height = height;
-    }
-
-    @Override
-    public void doBounce(){
-        height = screenHeight - y;
-        velocityY += -1 * bounceVY * stiffness;
     }
 
 

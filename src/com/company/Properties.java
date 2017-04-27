@@ -26,6 +26,10 @@ public class Properties {
         object = obj;
     }
 
+    public double getPropertyMax(String p){
+        return object.getPropertyMax(p);
+    }
+
     public void add(String s, Double d){
         includedValues.add(s);
         values.put(s,d);

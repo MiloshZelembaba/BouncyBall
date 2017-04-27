@@ -7,11 +7,21 @@ import java.awt.geom.Point2D;
  */
 public abstract class Physics {
 
-    private final static double GRAVITATIONAL_PULL = 0.15; /* gravity */
+    /* properties about the object itself */
+    public final static double GRAVITATIONAL_PULL = 0.15; /* gravity */
     protected double stiffness, bounceyness;
+    protected double width, height, originalHeight, originalWidth; // attributes of the ball
 
+    /* properties about the objects movement */
     protected double velocityX, velocityY;
     protected double x, y;
+
+    /* property about HOW the object moves */
+    protected MoveAlgorithm moveController;
+
+
+    /* additonal references */
+    protected Canvas canvas;
 
     public void addGravity(){
         increaseYVelocity(GRAVITATIONAL_PULL);
@@ -22,7 +32,6 @@ public abstract class Physics {
         y += velocityY;
     }
 
-    public abstract void doBounce();
 
     public abstract boolean contains(Point2D p);
 
@@ -37,6 +46,7 @@ public abstract class Physics {
     public Properties createProperties(){
         Properties p = new Properties(this);
         p.add(p.STIFFNESS, stiffness);
+        p.add(p.BOUNCEYNESS, bounceyness);
 
         return p;
     }
@@ -44,6 +54,32 @@ public abstract class Physics {
     public void update(String s, Double d){
         if (s == Properties.STIFFNESS){
             stiffness = d;
+        } else if (s == Properties.BOUNCEYNESS){
+            bounceyness = d;
         }
     }
+
+    public void onFinishMove(){
+        this.moveController = new NormalMove(this);
+    }
+
+
+
+    public double getStiffness(){
+        return stiffness;
+    }
+
+    public double getHeight(){
+        return height;
+    }
+
+    public void setHeight(double h){
+        height = h;
+    }
+
+    public double getScreenHeight(){
+        return (double)canvas.getHeight();
+    }
+
+    public abstract double getPropertyMax(String p);
 }

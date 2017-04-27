@@ -25,6 +25,7 @@ public class PropertiesView extends JFrame {
     }
 
     public void updateProperties(Properties p){
+        //removeAll();
         property = p;
         ArrayList<String> allValues = p.getAllValues();
         remove(emptyLabel);
@@ -33,7 +34,7 @@ public class PropertiesView extends JFrame {
             JPanel pane = new JPanel();
             pane.setLayout(new BoxLayout(pane, BoxLayout.Y_AXIS));
             Label label = new Label(value, Label.CENTER);
-            JSlider slider= new JSlider(JSlider.HORIZONTAL, 0, 100, (int)(100 * property.getValue(value)));
+            JSlider slider= new JSlider(JSlider.HORIZONTAL, 0, (int)(200 * property.getPropertyMax(value)), (int)(200 * property.getValue(value)));
 
             addSliderListener(slider, value);
 
@@ -51,7 +52,7 @@ public class PropertiesView extends JFrame {
             @Override
             public void stateChanged(ChangeEvent e) {
                 JSlider s = (JSlider)e.getSource();
-                property.updateProperty(value, ((double)s.getValue())/100);
+                property.updateProperty(value, ((double)s.getValue())/200);
             }
         });
     }

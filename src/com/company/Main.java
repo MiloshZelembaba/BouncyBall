@@ -17,6 +17,7 @@ public class Main {
         while (true){
             if (!paused) {
                 try {
+                    /* should maybe wanna update the fact that EVERYTHING is in this sleeping thread */
                     Thread.sleep(14); // 70 fps
                     physicsManager.manage(); // does physics
                 } catch (Exception e) {}
@@ -29,13 +30,13 @@ public class Main {
     public static void addListeners(){
         canvas.addMouseListener(new MouseAdapter() {
             @Override
-            public void mouseClicked(MouseEvent e) {
+            public void mouseClicked(MouseEvent e) {  // creating a new ball on each click
                 super.mouseClicked(e);
                 if (!paused) {
                     Ball ball = new Ball(e.getX(), e.getY(), 100, 100, canvas);
                     physicsManager.add(ball);
                     canvas.add(ball);
-                } else {
+                } else { // if we're paused, don't create a ball and instead invoke the editor
                     canvas.onClick(e.getPoint());
                 }
             }
@@ -46,7 +47,7 @@ public class Main {
             public void keyReleased(KeyEvent e) {
                 super.keyPressed(e);
 
-                if (e.getKeyChar() == 'p'){
+                if (e.getKeyChar() == 'p'){ // to pause the simulator
                     paused = !paused;
                     if (paused){
                         canvas.drawProperties();

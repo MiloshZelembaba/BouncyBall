@@ -10,24 +10,22 @@ import java.awt.geom.Point2D;
 public class Ball extends Physics{
 
     private double screenWidth, screenHeight;
-    private boolean bouncing; /* when the ball is bouncing we need to keep track of the original veloctiy */
     private Ellipse2D.Double ball;
 
 
 
-
+    /* set up a whole bunch of properties of the ball
+    *  you can find details on the properties in the superclass PHYSICS */
     public Ball(double x, double y, double width, double height, Canvas c){
         this.width = originalWidth = width;
         this.height = originalHeight = height;
         this.x = x;
         this.y = y;
         velocityX = velocityY = 0;
-        velocityX = 1;
         canvas = c;
         screenHeight = c.getHeight();
         screenWidth = c.getWidth();
-        stiffness = 0.10;
-        bouncing = false;
+        stiffness = 0.5;
         ball = new Ellipse2D.Double(x,y,width,height);
         bounceyness = 0.9;
         moveController = new NormalMove(this);
@@ -39,12 +37,13 @@ public class Ball extends Physics{
     }
 
 
-
+    /* the Ball's movement controller */
     public void move(){
         moveController.move();
 
         if (y + originalHeight >= screenHeight){
             if (!(moveController instanceof  BounceMove)){
+                // when a bounce is deteced, we switch movement controllers
                 moveController = new BounceMove(this, velocityY, velocityX, stiffness);
             }
         }
@@ -60,6 +59,7 @@ public class Ball extends Physics{
         updateBall();
     }
 
+    /* used by PropertiesView to get the range for each property */
     public double getPropertyMax(String p){
         double max = 0;
         if (p == Properties.STIFFNESS){

@@ -9,11 +9,14 @@ import java.util.ArrayList;
 /**
  * Created by miloshzelembaba on 2017-04-24.
  */
+
+/**
+ * As of right now this is the main VIEW class. Should separate the canvas portion out
+ */
 public class Canvas extends JPanel{
 
     private ArrayList<Ball> drawables = new ArrayList<>();
     private PhysicsManager physicsManager;
-    private boolean drawProperties = false;
     private PropertiesView propertyView;
 
 
@@ -43,15 +46,18 @@ public class Canvas extends JPanel{
     }
 
     public void drawProperties(){
-        drawProperties = true;
         propertyView = new PropertiesView();
     }
 
     public void stopDrawingProperties(){
-        drawProperties = false;
         propertyView.dispatchEvent(new WindowEvent(propertyView, WindowEvent.WINDOW_CLOSING));
     }
 
+
+    // detects which object we clicked. how can i make this more efficient?
+    // - put click listeners on each object?
+    // - something else idfk
+    // this method is only is use when the simulator is paused
     public void onClick(Point2D p){
         ArrayList<Physics> objects = physicsManager.getObjects();
 

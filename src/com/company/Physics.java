@@ -8,7 +8,7 @@ import java.awt.geom.Point2D;
 public abstract class Physics {
 
     /* properties about the object itself */
-    public final static double GRAVITATIONAL_PULL = 0.15; /* gravity */
+    public final static double GRAVITATIONAL_PULL = 0.3; /* gravity */
     protected double stiffness, bounceyness;
     protected double width, height, originalHeight, originalWidth; // attributes of the ball
 

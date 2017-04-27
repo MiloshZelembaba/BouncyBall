@@ -9,7 +9,7 @@ import java.util.Map;
  * Created by miloshzelembaba on 2017-04-26.
  */
 
-/* used as a transfer mechanism to send to the properties view */
+/** used as a transfer mechanism to send to the properties view */
 
 
 public class Properties {

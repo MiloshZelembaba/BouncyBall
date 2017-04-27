@@ -8,6 +8,10 @@ import java.util.ArrayList;
 
 /**
  * Created by miloshzelembaba on 2017-04-26.
+ *
+ * Creates a new JFrame on which all the current objects properties are displayed
+ * Decided to create a new frame since I can't garuntee a spot to place it on the
+ * original canvas without an object being in the way. Also allows for more customization
  */
 public class PropertiesView extends JFrame {
 

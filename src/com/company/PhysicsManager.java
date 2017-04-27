@@ -5,9 +5,14 @@ import java.util.ArrayList;
 /**
  * Created by miloshzelembaba on 2017-04-26.
  */
+
+
+/**
+ * Meant to be the overall physics god/manager thingy
+ */
 public class PhysicsManager {
 
-    private ArrayList<Physics> objects = new ArrayList<>();
+    private ArrayList<Physics> objects = new ArrayList<>(); // all objects in the simulator
 
     public ArrayList<Physics> getObjects(){
         return objects;
@@ -23,7 +28,7 @@ public class PhysicsManager {
         }
     }
 
-    public void doMove(){
+    public void doMove(){ // moves all objects according to their own move algorithms
         for (Physics obj : objects){
             obj.move();
         }

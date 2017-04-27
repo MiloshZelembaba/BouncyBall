@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b116f26-5521-4d12-a5c5-de57ec615fb7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/BounceMove.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/MoveAlgorithm.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/NormalMove.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/BounceMove.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/MoveAlgorithm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/NormalMove.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Ball.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Ball.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Main$1.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Main$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Main$2.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Main$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Main.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Physics.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Physics.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Properties.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Properties.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/PropertiesView$1.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/PropertiesView$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/PropertiesView.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/PropertiesView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Ball.java" afterPath="$PROJECT_DIR$/src/com/company/Ball.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Physics.java" afterPath="$PROJECT_DIR$/src/com/company/Physics.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Properties.java" afterPath="$PROJECT_DIR$/src/com/company/Properties.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/PropertiesView.java" afterPath="$PROJECT_DIR$/src/com/company/PropertiesView.java" />
-    </list>
+    <list default="true" id="1b116f26-5521-4d12-a5c5-de57ec615fb7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,8 +42,8 @@
       <file leaf-file-name="Ball.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Ball.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="47" column="66" lean-forward="false" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
+            <state relative-caret-position="330">
+              <caret line="46" column="58" lean-forward="true" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1059,8 +1038,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Ball.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="47" column="66" lean-forward="false" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
+        <state relative-caret-position="330">
+          <caret line="46" column="58" lean-forward="true" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

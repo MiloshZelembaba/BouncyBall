@@ -29,7 +29,8 @@ public class Ball extends Physics{
         stiffness = 0.10;
         bouncing = false;
         ball = new Ellipse2D.Double(x,y,width,height);
-        bounceyness = 0.90;
+        bounceyness = 0.9;
+        moveController = new NormalMove(this);
     }
 
     @Override
@@ -37,22 +38,42 @@ public class Ball extends Physics{
         return ball.contains(p);
     }
 
-    @Override
-    public void move(){
-        x += velocityX;
-        y += velocityY;
 
-        if (!bouncing){
-            bounceVY = velocityY;
-        }
+
+    public void move(){
+        moveController.move();
 
         if (y + originalHeight >= screenHeight){
-            bouncing = true;
-            doBounce();
+            if (!(moveController instanceof  BounceMove)){
+                moveController = new BounceMove(this);
+            }
         }
+
 
         updateBall();
     }
+
+//    @Override
+//    public void move(){
+//        x += velocityX;
+//        y += velocityY;
+//
+//        if (!bouncing){
+//            bounceVY = velocityY;
+//        }
+//
+//        if (y + originalHeight >= screenHeight){
+//            bouncing = true;
+//            doBounce();
+//        } else if (bouncing){
+//            velocityY = -1 * bounceVY * bounceyness;
+//            height = originalHeight;
+//            bouncing = false;
+//
+//        }
+//
+//        updateBall();
+//    }
 
     private void updateBall(){
         ball.x = x;
@@ -65,12 +86,6 @@ public class Ball extends Physics{
     public void doBounce(){
         height = screenHeight - y;
         velocityY += -1 * bounceVY * stiffness;
-
-        if (y + originalHeight <= screenHeight){
-            velocityY = bounceVY;
-            height = originalHeight;
-            bouncing = false;
-        }
     }
 
 

@@ -7,11 +7,16 @@ import java.awt.geom.Point2D;
  */
 public abstract class Physics {
 
+    /* properties about the object itself */
     private final static double GRAVITATIONAL_PULL = 0.15; /* gravity */
     protected double stiffness, bounceyness;
 
+    /* properties about the objects movement */
     protected double velocityX, velocityY;
     protected double x, y;
+
+    /* property about HOW the object moves */
+    protected MoveAlgorithm moveController;
 
     public void addGravity(){
         increaseYVelocity(GRAVITATIONAL_PULL);
@@ -45,5 +50,9 @@ public abstract class Physics {
         if (s == Properties.STIFFNESS){
             stiffness = d;
         }
+    }
+
+    public void onFinishMove(){
+        this.moveController = new NormalMove(this);
     }
 }

@@ -64,6 +64,7 @@ public class Ball extends Physics{
 
     /* the Ball's movement controller */
     public void move(){
+        stabilize();
         moveController.move();
 
         if (y + originalHeight >= screenHeight){
@@ -73,8 +74,16 @@ public class Ball extends Physics{
             }
         }
 
-
         updateBall();
+    }
+
+    private void stabilize(){
+        if (Math.abs(velocityX) < 0.25){
+            velocityX = 0;
+        }
+        if (Math.abs(velocityY) < 0.25){
+            velocityY = 0;
+        }
     }
 
     /* used by PropertiesView to get the range for each property */
@@ -131,7 +140,7 @@ public class Ball extends Physics{
     }
 
 
-    protected void drawBall(Graphics2D g) {
+    public void draw(Graphics2D g) {
         g.setColor(Color.MAGENTA);
         g.draw(ball);
 

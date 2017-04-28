@@ -18,16 +18,17 @@ import java.util.ArrayList;
  */
 public class Canvas extends JPanel{
 
-    private ArrayList<Ball> drawables = new ArrayList<>();
+    private ArrayList<Physics> drawables = new ArrayList<>();
     private Line2D arrow;
     private boolean drawArrow;
     private int ax, ay;
     private PhysicsManager physicsManager;
     private PropertiesView propertyView;
+    private JFrame f;
 
 
     public Canvas(PhysicsManager pm){
-        JFrame f = new JFrame();
+        f = new JFrame();
         f.add(this);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setSize(1000, 800);
@@ -36,7 +37,7 @@ public class Canvas extends JPanel{
         physicsManager = pm;
     }
 
-    public void add(Ball ball){
+    public void add(Physics ball){
         drawables.add(ball);
     }
 
@@ -46,9 +47,9 @@ public class Canvas extends JPanel{
 
     public void paint(Graphics g) {
         g.setColor(Color.BLACK);
-        for (Ball ball : drawables) {
+        for (Physics ball : drawables) {
             if (ball != null) {
-                ball.drawBall((Graphics2D) g);
+                ball.draw((Graphics2D) g);
             }
         }
 
@@ -75,7 +76,7 @@ public class Canvas extends JPanel{
     }
 
     public void drawProperties(){
-        propertyView = new PropertiesView();
+        propertyView = new PropertiesView(f);
     }
 
     public void stopDrawingProperties(){

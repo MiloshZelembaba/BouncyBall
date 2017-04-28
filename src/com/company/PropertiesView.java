@@ -18,8 +18,9 @@ public class PropertiesView extends JFrame {
     Properties property;
     private JLabel emptyLabel;
 
-    public PropertiesView(){
+    public PropertiesView(JFrame f){
         super();
+        this.setLocation(f.getX() + f.getWidth(), f.getY());
         getContentPane().setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
         setSize(200, 300);
         setVisible(true);

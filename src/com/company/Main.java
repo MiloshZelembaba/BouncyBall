@@ -9,6 +9,7 @@ public class Main {
     private static boolean paused = false;
     private static int downX, downY, upX, upY;
     private static double MAX_SPEED = 15;
+    private static String selectedObject = "moving ball";
 
     public static void main(String[] args) {
         physicsManager = new PhysicsManager();
@@ -27,6 +28,17 @@ public class Main {
 
             canvas.repaint(); // move everything
         }
+    }
+
+    public static void createObject(){
+        Ball ball = new Ball(downX - 37.5, downY - 37.5, 75, 75, canvas);
+        int dy = upY - downY > 150 ? 15 : (upY - downY)/10;
+        int dx = upX - downX > 150 ? 15 : (upX - downX)/10;
+
+        ball.increaseYVelocity(dy);
+        ball.increaseXVelocity(dx);
+        physicsManager.add(ball);
+        canvas.add(ball);
     }
 
     public static void addListeners(){
@@ -52,13 +64,8 @@ public class Main {
                 upY = e.getY();
                 if (!paused){
                     canvas.stopDrawingArrow();
-                    Ball ball = new Ball(downX - 37.5, downY - 37.5, 75, 75, canvas);
-                    int dy = upY - downY > 150 ? 15 : (upY - downY)/10;
-                    int dx = upX - downX > 150 ? 15 : (upX - downX)/10;
-                    ball.increaseYVelocity(dy);
-                    ball.increaseXVelocity(dx);
-                    physicsManager.add(ball);
-                    canvas.add(ball);
+
+                    createObject();
                 }
 
             }

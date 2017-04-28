@@ -1,5 +1,6 @@
 package com.company;
 
+import java.awt.*;
 import java.awt.geom.Point2D;
 
 /**
@@ -27,10 +28,7 @@ public abstract class Physics {
         increaseYVelocity(GRAVITATIONAL_PULL);
     }
 
-    public void move(){
-        x += velocityX;
-        y += velocityY;
-    }
+    public abstract void move();
 
 
     public abstract boolean contains(Point2D p);
@@ -93,4 +91,5 @@ public abstract class Physics {
     public abstract double getPropertyMax(String p);
     public abstract double getPropertyMin(String p);
     public abstract void onCollision(Physics obj, double vx, double vy);
+    public abstract void draw(Graphics2D g);
 }

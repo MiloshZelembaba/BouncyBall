@@ -47,6 +47,8 @@ public abstract class Physics {
         Properties p = new Properties(this);
         p.add(p.STIFFNESS, stiffness);
         p.add(p.BOUNCEYNESS, bounceyness);
+        p.add(p.VX ,velocityX);
+        p.add(p.VY ,velocityY);
 
         return p;
     }
@@ -56,6 +58,10 @@ public abstract class Physics {
             stiffness = d;
         } else if (s == Properties.BOUNCEYNESS){
             bounceyness = d;
+        } else if (s == Properties.VX){
+            velocityX = d;
+        } else if (s == Properties.VY){
+            velocityY = d;
         }
     }
 
@@ -80,6 +86,11 @@ public abstract class Physics {
     public double getScreenHeight(){
         return (double)canvas.getHeight();
     }
+    public double getScreenWidth(){
+        return (double)canvas.getWidth();
+    }
 
     public abstract double getPropertyMax(String p);
+    public abstract double getPropertyMin(String p);
+    public abstract void onCollision(Physics obj, double vx, double vy);
 }

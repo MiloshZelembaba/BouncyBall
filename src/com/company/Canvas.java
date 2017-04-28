@@ -1,8 +1,11 @@
 package com.company;
 
+import javafx.scene.shape.Line;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.WindowEvent;
+import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
 import java.util.ArrayList;
 
@@ -16,6 +19,9 @@ import java.util.ArrayList;
 public class Canvas extends JPanel{
 
     private ArrayList<Ball> drawables = new ArrayList<>();
+    private Line2D arrow;
+    private boolean drawArrow;
+    private int ax, ay;
     private PhysicsManager physicsManager;
     private PropertiesView propertyView;
 
@@ -42,7 +48,26 @@ public class Canvas extends JPanel{
             }
         }
 
+        if (drawArrow){
+            Point2D tmp = MouseInfo.getPointerInfo().getLocation();
+            arrow = new Line2D.Double(ax,ay,tmp.getX() - this.getLocationOnScreen().x, tmp.getY() - this.getLocationOnScreen().y);
+            ((Graphics2D)g).draw(arrow);
+        }
 
+
+    }
+
+
+    public void drawArrow(int x, int y){
+        ax = x;
+        ay = y;
+        Point2D tmp = MouseInfo.getPointerInfo().getLocation();
+        arrow = new Line2D.Double(ax,ay,tmp.getX() - this.getLocationOnScreen().x, tmp.getY() - this.getLocationOnScreen().y);
+        drawArrow = true;
+    }
+
+    public void stopDrawingArrow(){
+        drawArrow = false;
     }
 
     public void drawProperties(){

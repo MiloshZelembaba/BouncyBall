@@ -38,7 +38,8 @@ public class PropertiesView extends JFrame {
             JPanel pane = new JPanel();
             pane.setLayout(new BoxLayout(pane, BoxLayout.Y_AXIS));
             Label label = new Label(value, Label.CENTER);
-            JSlider slider= new JSlider(JSlider.HORIZONTAL, 0, (int)(200 * property.getPropertyMax(value)), (int)(200 * property.getValue(value)));
+            JSlider slider= new JSlider(JSlider.HORIZONTAL, (int)(200 * property.getPropertyMin(value))
+                    , (int)(200 * property.getPropertyMax(value)), (int)(200 * property.getValue(value)));
 
             addSliderListener(slider, value);
 

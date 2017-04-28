@@ -16,6 +16,8 @@ public class Properties {
 
     public static final String STIFFNESS = "STIFFNESS";
     public static final String BOUNCEYNESS = "BOUNCEYNESS";
+    public static final String VX = "VX";
+    public static final String VY = "VY";
 
     private Map<String, Double> values = new HashMap<>();
     private ArrayList<String> includedValues = new ArrayList<>();
@@ -28,6 +30,9 @@ public class Properties {
 
     public double getPropertyMax(String p){
         return object.getPropertyMax(p);
+    }
+    public double getPropertyMin(String p){
+        return object.getPropertyMin(p);
     }
 
     public void add(String s, Double d){

@@ -37,6 +37,30 @@ public class Ball extends Physics{
     }
 
 
+    /**
+     * Takes care of itself based on the object (obj) it's colliding with
+     * @param obj
+     */
+    @Override
+    public void onCollision(Physics obj, double vx, double vy){
+        double theirVelocity = Math.sqrt(vx * vx + vy * vy);
+        double myVelocity = Math.sqrt(velocityX * velocityX + velocityY * velocityY);
+
+        double dcx = ((Ball)obj).getCenter().getX() - x;
+        double dcy = ((Ball)obj).getCenter().getY() - y;
+        double distance = getCenter().distance(((Ball)obj).getCenter());
+
+        double angleToObj = 3.14 - Math.atan2(dcy,dcx);
+        double speedAngle = 3.14 - Math.atan2(velocityY,velocityX);
+
+        if (dcx < 0 && dcy < 0){ // upper left quad
+           // obj.velocityY +=
+        }
+
+
+    }
+
+
     /* the Ball's movement controller */
     public void move(){
         moveController.move();
@@ -47,13 +71,6 @@ public class Ball extends Physics{
                 moveController = new BounceMove(this, velocityY, velocityX, stiffness);
             }
         }
-
-        if (x + originalWidth >= screenWidth){
-            velocityX *= -1;
-        } else if (x < 0){
-            velocityX *= -1;
-        }
-
 
 
         updateBall();
@@ -66,9 +83,21 @@ public class Ball extends Physics{
             max = 0.5;
         } else if (p == Properties.BOUNCEYNESS){
             max = 1;
+        } else if (p == Properties.VX || p == Properties.VY){
+            max = 30;
         }
 
         return max;
+    }
+
+    /* used by PropertiesView to get the range for each property */
+    public double getPropertyMin(String p){
+        double min = 0;
+        if (p == Properties.VX || p == Properties.VY){
+            min = -30;
+        }
+
+        return min;
     }
 
 //    @Override
@@ -105,5 +134,10 @@ public class Ball extends Physics{
         g.setColor(Color.MAGENTA);
         g.draw(ball);
 
+    }
+
+    public Point2D getCenter(){
+        Point2D p = new Point((int)(x + width/2),(int)(y + height/2));
+        return p;
     }
 }

@@ -10,6 +10,8 @@ package com.company;
  */
 public class NormalMove extends MoveAlgorithm{
 
+    private double horizontalResistance = 0.005;
+
 
     public NormalMove(Physics obj){
         object = obj;
@@ -18,5 +20,25 @@ public class NormalMove extends MoveAlgorithm{
     public void move(){
         object.x += object.velocityX;
         object.y += object.velocityY;
+
+
+        if (object.velocityX > 0 && object.velocityX - horizontalResistance < 0){
+            object.velocityX = 0;
+        } else if (object.velocityX < 0 && object.velocityX + horizontalResistance > 0){
+            object.velocityX = 0;
+        } else {
+            if (object.velocityX > 0){
+                object.velocityX -= horizontalResistance;
+            } else if (object.velocityX < 0){
+                object.velocityX += horizontalResistance;
+            }
+        }
+
+        if (object.x + object.originalWidth >= object.getScreenWidth()){
+            object.velocityX *= -1;
+        } else if (object.x < 0){
+            object.velocityX *= -1;
+        }
+
     }
 }

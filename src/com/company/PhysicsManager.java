@@ -42,6 +42,10 @@ public class PhysicsManager {
         doMove(); // move all objects
     }
 
+    public void clear(){
+        objects.clear();
+    }
+
 
     /**
      * This is a simple collision detector, it will just test every object with every other object
@@ -69,9 +73,31 @@ public class PhysicsManager {
                     double vy = obj1.velocityY;
                     obj1.onCollision(obj2, obj2.velocityX, obj2.velocityY);
                     obj2.onCollision(obj1, vx, vy);
+                    adjustToAvoidOverlap(obj1,obj2);
                 }
             }
         }
+    }
+
+    private void adjustToAvoidOverlap(Physics obj1, Physics obj2){
+        Ball b1 = (Ball) obj1;
+        Ball b2 = (Ball) obj2;
+        Point2D center1 = b1.getCenter();
+        Point2D center2 = b2.getCenter();
+        double radius1 = b1.getHeight()/2;
+        double radius2 = b2.getHeight()/2;
+        double difference = (radius1 + radius2 - center1.distance(center2))/2;
+        double angle = Math.atan2(obj2.y - obj1.y,obj2.x - obj1.x);
+
+        obj1.x += (difference/-1) * Math.cos(angle);
+        obj1.y += (difference/-1) * Math.sin(angle);
+        obj2.x += (difference/1) * Math.cos(angle);
+        obj2.y += (difference/1) * Math.sin(angle);
+
+
+
+
+
     }
 
     private boolean collision(Ball obj1, Ball obj2){

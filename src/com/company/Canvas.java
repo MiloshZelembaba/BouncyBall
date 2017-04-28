@@ -40,6 +40,10 @@ public class Canvas extends JPanel{
         drawables.add(ball);
     }
 
+    public void clear(){
+        drawables.clear();
+    }
+
     public void paint(Graphics g) {
         g.setColor(Color.BLACK);
         for (Ball ball : drawables) {

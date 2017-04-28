@@ -10,7 +10,7 @@ package com.company;
  */
 public class NormalMove extends MoveAlgorithm{
 
-    private double horizontalResistance = 0.005;
+    private double horizontalResistance = 0.015;
 
 
     public NormalMove(Physics obj){
@@ -35,9 +35,16 @@ public class NormalMove extends MoveAlgorithm{
         }
 
         if (object.x + object.originalWidth >= object.getScreenWidth()){
-            object.velocityX *= -1;
+            object.velocityX *= -0.75;
         } else if (object.x < 0){
-            object.velocityX *= -1;
+            object.velocityX *= -0.75;
+        }
+
+
+        if (object.x < 0){
+            object.x = 0;
+        } else if (object.x + object.originalWidth > object.getScreenWidth()){
+            object.x = object.getScreenWidth() - object.originalWidth;
         }
 
     }

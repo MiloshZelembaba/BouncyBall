@@ -38,26 +38,27 @@ public class Ball extends Physics{
 
 
     /**
-     * Takes care of itself based on the object (obj) it's colliding with
+     *
      * @param obj
      */
     @Override
     public void onCollision(Physics obj, double vx, double vy){
-        double theirVelocity = Math.sqrt(vx * vx + vy * vy);
         double myVelocity = Math.sqrt(velocityX * velocityX + velocityY * velocityY);
+        myVelocity *= 0.25;
 
         double dcx = ((Ball)obj).getCenter().getX() - x;
         double dcy = ((Ball)obj).getCenter().getY() - y;
-        double distance = getCenter().distance(((Ball)obj).getCenter());
 
-        double angleToObj = 3.14 - Math.atan2(dcy,dcx);
-        double speedAngle = 3.14 - Math.atan2(velocityY,velocityX);
-
-        if (dcx < 0 && dcy < 0){ // upper left quad
-           // obj.velocityY +=
-        }
+        double angleToObj = Math.atan2(dcy,dcx);
+        //double speedAngle = Math.atan2(velocityY,velocityX);
 
 
+
+
+        obj.increaseYVelocity(myVelocity * Math.sin(angleToObj));
+        obj.increaseXVelocity(myVelocity * Math.cos(angleToObj));
+        increaseYVelocity(-1 * myVelocity * Math.sin(angleToObj));
+        increaseXVelocity(-1 * myVelocity * Math.cos(angleToObj));
     }
 
 

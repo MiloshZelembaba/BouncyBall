@@ -76,6 +76,9 @@ public class Main {
                     } else {
                         canvas.stopDrawingProperties();
                     }
+                } else if (e.getKeyChar() == 'r'){
+                    physicsManager.clear();
+                    canvas.clear();
                 }
             }
         });

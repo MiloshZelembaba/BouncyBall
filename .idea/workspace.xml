@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b116f26-5521-4d12-a5c5-de57ec615fb7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/EditorView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Ball.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Ball.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/Model.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Main$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Main$2.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Canvas.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Canvas.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Main$1.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Main$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Main$2.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Main$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/EditorView.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/EditorView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Main.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Physics.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Physics.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/PropertiesView.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/PropertiesView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Canvas.java" afterPath="$PROJECT_DIR$/src/com/company/Canvas.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/EditorView.java" afterPath="$PROJECT_DIR$/src/com/company/EditorView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/PropertiesView.java" afterPath="$PROJECT_DIR$/src/com/company/PropertiesView.java" />
     </list>
@@ -31,10 +32,24 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1065">
-              <caret line="76" column="24" lean-forward="false" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
+            <state relative-caret-position="0">
+              <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Model.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="930">
+              <caret line="75" column="10" lean-forward="false" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
               <folding>
-                <element signature="e#2994#2995#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1284#1285#0" expanded="true" />
+                <element signature="e#1320#1321#0" expanded="true" />
+                <element signature="e#3147#3737#0" expanded="true" />
+                <element signature="e#3736#3737#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,9 +58,17 @@
       <file leaf-file-name="EditorView.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/EditorView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="280">
+              <caret line="55" column="37" lean-forward="false" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1049#1282#0" expanded="true" />
+                <element signature="e#1281#1282#0" expanded="true" />
+                <element signature="e#1322#1553#0" expanded="true" />
+                <element signature="e#1552#1553#0" expanded="true" />
+                <element signature="e#1596#1836#0" expanded="true" />
+                <element signature="e#1835#1836#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,8 +76,8 @@
       <file leaf-file-name="PropertiesView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/PropertiesView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="86" />
+            <state relative-caret-position="345">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,8 +88,8 @@
       <file leaf-file-name="Canvas.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Canvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="66" column="33" lean-forward="false" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
+            <state relative-caret-position="70">
+              <caret line="87" column="54" lean-forward="true" selection-start-line="87" selection-start-column="54" selection-end-line="87" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,7 +118,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/company/Bounceable.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Model.java" />
         <option value="$PROJECT_DIR$/src/com/company/MoveAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/com/company/BounceMove.java" />
         <option value="$PROJECT_DIR$/src/com/company/Properties.java" />
@@ -103,10 +125,11 @@
         <option value="$PROJECT_DIR$/src/com/company/NormalMove.java" />
         <option value="$PROJECT_DIR$/src/com/company/Physics.java" />
         <option value="$PROJECT_DIR$/src/com/company/Ball.java" />
+        <option value="$PROJECT_DIR$/src/com/company/PropertiesView.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/Canvas.java" />
-        <option value="$PROJECT_DIR$/src/com/company/PropertiesView.java" />
         <option value="$PROJECT_DIR$/src/com/company/EditorView.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Model.java" />
       </list>
     </option>
   </component>
@@ -494,9 +517,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
           <caret line="53" column="55" lean-forward="false" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
-          <folding>
-            <element signature="e#2994#2995#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -593,9 +614,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
           <caret line="53" column="55" lean-forward="false" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
-          <folding>
-            <element signature="e#2994#2995#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -692,9 +711,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
           <caret line="53" column="55" lean-forward="false" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
-          <folding>
-            <element signature="e#2994#2995#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -764,9 +781,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2994#2995#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -816,9 +831,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding>
-            <element signature="e#2994#2995#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -843,7 +856,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Bounceable.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/Model.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/MoveAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -920,10 +932,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Canvas.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/PropertiesView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="66" column="33" lean-forward="false" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -932,18 +944,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="76" column="24" lean-forward="false" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="75" column="10" lean-forward="false" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
           <folding>
-            <element signature="e#2994#2995#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1284#1285#0" expanded="true" />
+            <element signature="e#1320#1321#0" expanded="true" />
+            <element signature="e#3147#3737#0" expanded="true" />
+            <element signature="e#3736#3737#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/PropertiesView.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Canvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="86" />
+        <state relative-caret-position="70">
+          <caret line="87" column="54" lean-forward="true" selection-start-line="87" selection-start-column="54" selection-end-line="87" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -952,9 +976,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/EditorView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="280">
+          <caret line="55" column="37" lean-forward="false" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1049#1282#0" expanded="true" />
+            <element signature="e#1281#1282#0" expanded="true" />
+            <element signature="e#1322#1553#0" expanded="true" />
+            <element signature="e#1552#1553#0" expanded="true" />
+            <element signature="e#1596#1836#0" expanded="true" />
+            <element signature="e#1835#1836#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

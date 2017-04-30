@@ -1,7 +1,5 @@
 package com.company;
 
-import javafx.scene.shape.Line;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.WindowEvent;
@@ -20,6 +18,7 @@ public class Canvas extends JPanel{
 
     private ArrayList<Physics> drawables = new ArrayList<>();
     private Line2D arrow;
+    private Model model;
     private boolean drawArrow;
     private int ax, ay;
     private PhysicsManager physicsManager;
@@ -28,12 +27,13 @@ public class Canvas extends JPanel{
     private JFrame f;
 
 
-    public Canvas(PhysicsManager pm){
+    public Canvas(PhysicsManager pm, Model m){
         f = new JFrame();
         f.add(this);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setSize(1000, 800);
         f.setVisible(true);
+        model = m;
 
         physicsManager = pm;
     }
@@ -85,7 +85,7 @@ public class Canvas extends JPanel{
 
     public void drawEditor(){
         propertyView = new PropertiesView(f);
-        editorView = new EditorView(propertyView);
+        editorView = new EditorView(propertyView, model);
     }
 
     public void stopDrawingEditor(){

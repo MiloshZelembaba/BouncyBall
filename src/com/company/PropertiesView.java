@@ -21,7 +21,7 @@ public class PropertiesView extends JFrame {
     public PropertiesView(JFrame f){
         super();
         this.setLocation(f.getX() + f.getWidth(), f.getY());
-        getContentPane().setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
+
         setSize(200, 300);
         emptyLabel = new JLabel("Select an object to manipulate it's properties");
         add(emptyLabel);

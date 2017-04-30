@@ -26,6 +26,7 @@ public class Main {
                 } catch (Exception e) {}
             }
 
+
             canvas.repaint(); // move everything
         }
     }
@@ -79,9 +80,9 @@ public class Main {
                 if (e.getKeyChar() == 'p'){ // to pause the simulator
                     paused = !paused;
                     if (paused){
-                        canvas.drawProperties();
+                        canvas.drawEditor();
                     } else {
-                        canvas.stopDrawingProperties();
+                        canvas.stopDrawingEditor();
                     }
                 } else if (e.getKeyChar() == 'r'){
                     physicsManager.clear();

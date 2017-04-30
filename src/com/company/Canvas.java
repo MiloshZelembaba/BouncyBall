@@ -24,6 +24,7 @@ public class Canvas extends JPanel{
     private int ax, ay;
     private PhysicsManager physicsManager;
     private PropertiesView propertyView;
+    private EditorView editorView;
     private JFrame f;
 
 
@@ -59,6 +60,13 @@ public class Canvas extends JPanel{
             ((Graphics2D)g).draw(arrow);
         }
 
+        if (propertyView != null) {
+            propertyView.repaint();
+        }
+        if (editorView != null){
+            editorView.repaint();
+        }
+
 
     }
 
@@ -75,12 +83,14 @@ public class Canvas extends JPanel{
         drawArrow = false;
     }
 
-    public void drawProperties(){
+    public void drawEditor(){
         propertyView = new PropertiesView(f);
+        editorView = new EditorView(propertyView);
     }
 
-    public void stopDrawingProperties(){
+    public void stopDrawingEditor(){
         propertyView.dispatchEvent(new WindowEvent(propertyView, WindowEvent.WINDOW_CLOSING));
+        editorView.dispatchEvent(new WindowEvent(editorView, WindowEvent.WINDOW_CLOSING));
     }
 
 

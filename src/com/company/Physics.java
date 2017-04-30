@@ -67,7 +67,13 @@ public abstract class Physics {
         this.moveController = new NormalMove(this);
     }
 
+    public void setMovementController(MoveAlgorithm mv){
+        moveController = mv;
+    }
 
+    public boolean isBouncing(){
+        return moveController instanceof BounceMove;
+    }
 
     public double getStiffness(){
         return stiffness;

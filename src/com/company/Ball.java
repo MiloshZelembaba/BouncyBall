@@ -7,7 +7,7 @@ import java.awt.geom.Point2D;
 /**
  * Created by miloshzelembaba on 2017-04-24.
  */
-public class Ball extends Physics{
+public class Ball extends MoveableObject{
 
     private double screenWidth, screenHeight;
     private Ellipse2D.Double ball;
@@ -109,28 +109,6 @@ public class Ball extends Physics{
 
         return min;
     }
-
-//    @Override
-//    public void move(){
-//        x += velocityX;
-//        y += velocityY;
-//
-//        if (!bouncing){
-//            bounceVY = velocityY;
-//        }
-//
-//        if (y + originalHeight >= screenHeight){
-//            bouncing = true;
-//            doBounce();
-//        } else if (bouncing){
-//            velocityY = -1 * bounceVY * bounceyness;
-//            height = originalHeight;
-//            bouncing = false;
-//
-//        }
-//
-//        updateBall();
-//    }
 
     private void updateBall(){
         ball.x = x;

@@ -40,21 +40,18 @@ public class EditorView extends JFrame {
             @Override
             public void mouseClicked(MouseEvent e) {
                 model.setObject(model.MOVING_BALL);
-                System.out.println("creating movabel balls");
             }
         });
         fixedCircle.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 model.setObject(model.FIXED_BALL );
-                System.out.println("creating fixed balls");
             }
         });
         fixedRectangle.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 model.setObject(model.FIXED_RECTANGLE);
-                System.out.println("creating fixed rectangles");
             }
         });
     }

@@ -55,6 +55,10 @@ public class Model {
     }
 
     public void createFixedBall(){
+        FixedBall ball = new FixedBall(downX - 37.5, downY - 37.5, 75, 75, canvas);
+
+        physicsManager.add(ball);
+        canvas.add(ball);
 
     }
 

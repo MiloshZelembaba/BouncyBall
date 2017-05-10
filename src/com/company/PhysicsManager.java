@@ -63,7 +63,7 @@ public class PhysicsManager {
             for (int j = i + 1; j < size; ++j){
                 Physics obj1 = objects.get(i);
                 Physics obj2 = objects.get(j);
-                if (collision((Ball)obj1, (Ball)obj2)){
+                if (collision(obj1, obj2)){
                     /*
                      * we must save the velocities of obj1 since they will change in obj1.onCollision(obj2)
                      * and then wont be the same they used to be for obj2.onCollision(obj1)
@@ -79,28 +79,24 @@ public class PhysicsManager {
         }
     }
 
-    private void adjustToAvoidOverlap(Physics obj1, Physics obj2){
+    private void adjustToAvoidOverlap(Physics obj1, Physics obj2) {
         Ball b1 = (Ball) obj1;
         Ball b2 = (Ball) obj2;
         Point2D center1 = b1.getCenter();
         Point2D center2 = b2.getCenter();
-        double radius1 = b1.getHeight()/2;
-        double radius2 = b2.getHeight()/2;
-        double difference = (radius1 + radius2 - center1.distance(center2))/2;
-        double angle = Math.atan2(obj2.y - obj1.y,obj2.x - obj1.x);
+        double radius1 = b1.getHeight() / 2;
+        double radius2 = b2.getHeight() / 2;
+        double difference = (radius1 + radius2 - center1.distance(center2)) / 2;
+        double angle = Math.atan2(obj2.y - obj1.y, obj2.x - obj1.x);
 
-        obj1.x += (difference/-1) * Math.cos(angle);
-        obj1.y += (difference/-1) * Math.sin(angle);
-        obj2.x += (difference/1) * Math.cos(angle);
-        obj2.y += (difference/1) * Math.sin(angle);
-
-
-
-
+        obj1.x += (difference / -1) * Math.cos(angle);
+        obj1.y += (difference / -1) * Math.sin(angle);
+        obj2.x += (difference / 1) * Math.cos(angle);
+        obj2.y += (difference / 1) * Math.sin(angle);
 
     }
 
-    private boolean collision(Ball obj1, Ball obj2){
+    private boolean collision(Physics obj1, Physics obj2){
         Point2D center1 = obj1.getCenter();
         double radius1 = obj1.getHeight()/2;
         Point2D center2 = obj2.getCenter();

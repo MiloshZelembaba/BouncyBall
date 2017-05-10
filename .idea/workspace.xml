@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b116f26-5521-4d12-a5c5-de57ec615fb7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/FixedBall.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/FixedRectangle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/MoveableObject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/StationaryObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Ball.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Ball.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/EditorView$1.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/EditorView$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/EditorView$2.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/EditorView$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/EditorView$3.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/EditorView$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/EditorView.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/EditorView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Model$1.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Model$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Model$2.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Model$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Model.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Model.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Physics.class" afterPath="$PROJECT_DIR$/out/production/BouncyBall/com/company/Physics.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Ball.java" afterPath="$PROJECT_DIR$/src/com/company/Ball.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/EditorView.java" afterPath="$PROJECT_DIR$/src/com/company/EditorView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Model.java" afterPath="$PROJECT_DIR$/src/com/company/Model.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/FixedRectangle.java" afterPath="$PROJECT_DIR$/src/com/company/FixedRectangle.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Physics.java" afterPath="$PROJECT_DIR$/src/com/company/Physics.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/PhysicsManager.java" afterPath="$PROJECT_DIR$/src/com/company/PhysicsManager.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +25,7 @@
       <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="825">
               <caret line="60" column="25" lean-forward="false" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -50,14 +37,14 @@
       <file leaf-file-name="Physics.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Physics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="74" column="52" lean-forward="false" selection-start-line="74" selection-start-column="52" selection-end-line="74" selection-end-column="52" />
+            <state relative-caret-position="870">
+              <caret line="65" column="11" lean-forward="false" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1751#1752#0" expanded="true" />
-                <element signature="e#1786#1787#0" expanded="true" />
-                <element signature="e#1820#1821#0" expanded="true" />
-                <element signature="e#1879#1880#0" expanded="true" />
+                <element signature="e#1793#1794#0" expanded="true" />
+                <element signature="e#1828#1829#0" expanded="true" />
+                <element signature="e#1862#1863#0" expanded="true" />
+                <element signature="e#1921#1922#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,12 +53,10 @@
       <file leaf-file-name="PhysicsManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/PhysicsManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="65" column="36" lean-forward="false" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+            <state relative-caret-position="28">
+              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#945#946#0" expanded="true" />
-                <element signature="e#976#977#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,8 +85,8 @@
       <file leaf-file-name="Ball.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Ball.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="1830">
+              <caret line="126" column="13" lean-forward="false" selection-start-line="126" selection-start-column="13" selection-end-line="126" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,10 +97,12 @@
       <file leaf-file-name="FixedRectangle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/FixedRectangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+            <state relative-caret-position="495">
+              <caret line="36" column="61" lean-forward="false" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
+                <element signature="e#851#852#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,7 +111,7 @@
       <file leaf-file-name="BounceMove.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/BounceMove.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="240">
               <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
               <folding />
             </state>
@@ -153,6 +140,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>center</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -168,19 +160,19 @@
         <option value="$PROJECT_DIR$/src/com/company/MoveAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/com/company/BounceMove.java" />
         <option value="$PROJECT_DIR$/src/com/company/Properties.java" />
-        <option value="$PROJECT_DIR$/src/com/company/PhysicsManager.java" />
         <option value="$PROJECT_DIR$/src/com/company/NormalMove.java" />
         <option value="$PROJECT_DIR$/src/com/company/PropertiesView.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/Canvas.java" />
         <option value="$PROJECT_DIR$/src/com/company/EditorView.java" />
         <option value="$PROJECT_DIR$/src/com/company/FixedBall.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Physics.java" />
         <option value="$PROJECT_DIR$/src/com/company/MoveableObject.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Ball.java" />
         <option value="$PROJECT_DIR$/src/com/company/StationaryObject.java" />
-        <option value="$PROJECT_DIR$/src/com/company/FixedRectangle.java" />
         <option value="$PROJECT_DIR$/src/com/company/Model.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Physics.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Ball.java" />
+        <option value="$PROJECT_DIR$/src/com/company/FixedRectangle.java" />
+        <option value="$PROJECT_DIR$/src/com/company/PhysicsManager.java" />
       </list>
     </option>
   </component>
@@ -203,8 +195,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -237,7 +230,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -487,8 +479,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2746781" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27825466" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -500,6 +491,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -577,10 +569,10 @@
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1751#1752#0" expanded="true" />
-            <element signature="e#1786#1787#0" expanded="true" />
-            <element signature="e#1820#1821#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
+            <element signature="e#1793#1794#0" expanded="true" />
+            <element signature="e#1828#1829#0" expanded="true" />
+            <element signature="e#1862#1863#0" expanded="true" />
+            <element signature="e#1921#1922#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -629,8 +621,6 @@
           <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -678,10 +668,10 @@
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1751#1752#0" expanded="true" />
-            <element signature="e#1786#1787#0" expanded="true" />
-            <element signature="e#1820#1821#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
+            <element signature="e#1793#1794#0" expanded="true" />
+            <element signature="e#1828#1829#0" expanded="true" />
+            <element signature="e#1862#1863#0" expanded="true" />
+            <element signature="e#1921#1922#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -730,8 +720,6 @@
           <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -752,10 +740,10 @@
           <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1751#1752#0" expanded="true" />
-            <element signature="e#1786#1787#0" expanded="true" />
-            <element signature="e#1820#1821#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
+            <element signature="e#1793#1794#0" expanded="true" />
+            <element signature="e#1828#1829#0" expanded="true" />
+            <element signature="e#1862#1863#0" expanded="true" />
+            <element signature="e#1921#1922#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -804,8 +792,6 @@
           <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -826,10 +812,10 @@
           <caret line="7" column="57" lean-forward="false" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1751#1752#0" expanded="true" />
-            <element signature="e#1786#1787#0" expanded="true" />
-            <element signature="e#1820#1821#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
+            <element signature="e#1793#1794#0" expanded="true" />
+            <element signature="e#1828#1829#0" expanded="true" />
+            <element signature="e#1862#1863#0" expanded="true" />
+            <element signature="e#1921#1922#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -935,12 +921,12 @@
           <caret line="53" column="55" lean-forward="false" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1049#1220#0" expanded="true" />
-            <element signature="e#1219#1220#0" expanded="true" />
-            <element signature="e#1260#1431#0" expanded="true" />
-            <element signature="e#1430#1431#0" expanded="true" />
-            <element signature="e#1474#1649#0" expanded="true" />
-            <element signature="e#1648#1649#0" expanded="true" />
+            <element signature="e#1049#1220#0" expanded="false" />
+            <element signature="e#1219#1220#0" expanded="false" />
+            <element signature="e#1260#1431#0" expanded="false" />
+            <element signature="e#1430#1431#0" expanded="false" />
+            <element signature="e#1474#1649#0" expanded="false" />
+            <element signature="e#1648#1649#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -973,7 +959,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/BounceMove.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="240">
           <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
           <folding />
         </state>
@@ -987,16 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Ball.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/StationaryObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1005,19 +981,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/FixedRectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="825">
           <caret line="60" column="25" lean-forward="false" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1027,26 +993,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Physics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="74" column="52" lean-forward="false" selection-start-line="74" selection-start-column="52" selection-end-line="74" selection-end-column="52" />
+        <state relative-caret-position="870">
+          <caret line="65" column="11" lean-forward="false" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1751#1752#0" expanded="true" />
-            <element signature="e#1786#1787#0" expanded="true" />
-            <element signature="e#1820#1821#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
+            <element signature="e#1793#1794#0" expanded="true" />
+            <element signature="e#1828#1829#0" expanded="true" />
+            <element signature="e#1862#1863#0" expanded="true" />
+            <element signature="e#1921#1922#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Ball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1830">
+          <caret line="126" column="13" lean-forward="false" selection-start-line="126" selection-start-column="13" selection-end-line="126" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/FixedRectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="36" column="61" lean-forward="false" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/PhysicsManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="65" column="36" lean-forward="false" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+        <state relative-caret-position="28">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
           </folding>
         </state>
       </provider>

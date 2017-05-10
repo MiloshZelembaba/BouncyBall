@@ -63,6 +63,8 @@ public abstract class Physics {
         }
     }
 
+    public abstract Point2D getCenter();
+
     public void onFinishMove(){
         this.moveController = new NormalMove(this);
     }

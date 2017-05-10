@@ -124,6 +124,7 @@ public class Ball extends MoveableObject{
 
     }
 
+    @Override
     public Point2D getCenter(){
         Point2D p = new Point((int)(x + width/2),(int)(y + height/2));
         return p;

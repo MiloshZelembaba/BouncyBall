@@ -33,6 +33,11 @@ public class FixedRectangle extends StationaryObject{
     }
 
     @Override
+    public Point2D getCenter(){
+        return new Point2D.Double(x + width/2, y + height/2);
+    }
+
+    @Override
     public double getPropertyMin(String prop){
         return 0; //TODO: does this need to be changed?
     }
